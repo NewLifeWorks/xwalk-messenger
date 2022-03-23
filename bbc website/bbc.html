@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - BBC NEWS</title>
+
+        <style type="text/css">
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            font-size: 62.5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #topbar {
+            background-color: none;
+            height: 3rem;
+            width: 90.5rem;
+            margin: 0 auto;
+        }
+        #bbclogo {
+            margin: 5px 5px 5px 132px;
+            width: 6rem;
+            /* float left so other elements are to the right of floated elelment */
+            float: left;
+        }
+        .topbar-section {
+            float: left;
+            border-left: .0625rem #cccccc solid;
+            height: 2rem;
+        }
+        .prelogo {
+            float: left;
+            margin: .3rem .5rem .5rem .5rem;
+        }
+        #signin {
+        float: left;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: .7rem;
+        margin-right: 1rem;
+    
+        }
+        #brak1{
+        float: left;
+        height: 3rem;
+        }
+        #bell {
+            float: left;
+            background-color: transparent;
+            height: 80%;
+            margin: .1rem .7rem .1rem .3rem;
+        }
+        #line {
+            float: left;
+            height: 3rem;
+        }
+        #news {
+            float: left;
+            font-weight: bold;
+            font-size: 18px;
+            padding: .5rem .5rem .5rem .5rem;
+        }
+        .more {
+            float: left;
+            font-weight: bold;
+            font-size: 18px;
+            padding: .5rem 2rem .5rem .5rem;
+        }
+        #more-arrow {
+            float: left;
+            margin-top: .7rem;
+            width: 20px;
+            margin-right: 20px;
+        }
+        .searchbar {
+            border: none;
+        }
+        .search {
+            float: left;
+           border: none;
+            height: 1.6rem;
+            width: 130px;
+            margin-left: 1px;
+        margin-top: .5rem;
+        background-color: #e4e4e4;
+        padding: 0;
+            
+            
+        }
+        .glass {
+            float: left;
+           margin-left: .5rem;
+            /* margin-right: 1rem; */
+            margin-top: 6px;
+            height: 27px;
+            background-color: #e4e4e4;
+            cursor: pointer;
+        }
+        .clear {
+            clear:both;
+        }
+        #menu-bar-container {
+        width: 100%;
+            height: 8rem;
+            background-color: #b80000;
+            position: absolute;
+        }
+        .menu-bar {
+            width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            position: relative;
+        top: 30px;
+            margin: 0px;
+            color: #fff;
+            font-size: 50px;
+            font-weight: normal;
+        padding: 10px;
+        margin-left: 120px
+        }
+        #local-news {
+
+float: right;
+width: 300px;
+
+        }
+        #local-news a {
+            border: 1px #b84545 solid;
+            position: relative;
+            text-decoration: none;
+            font-size: 32px;
+            color: #fff;
+            top: -25px;
+        border-radius: 5px;
+        padding: 5px 5px 5px 5px;
+        margin: 5px;
+    
+        width: 100px;
+        
+        
+        
+        }
+        #local-news a:hover {
+            text-decoration: underline;
+        }
+#menu-bar-container2 {
+    background-color: #a91717;
+    width: 100%;
+}
+#menu-bar2 {
+    top: 10px;
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    height: 40px;
+}
+#menu-bar2 a {
+color: #fff;
+font-size: 12.5px;
+text-decoration: none;
+margin-top: 5px;
+padding: 0 10px;
+border-right: 1px solid #bd454545;
+
+}
+#menu-bar2 a:hover  {
+    text-decoration: underline;
+}
+        /* Main News Row */
+        .main-news-row {
+           /* height: 50px;
+           margin: 0 auto; */
+           width: 100%;
+            background-color: #a91717;
+            /* align-items: center;
+            justify-content: center;
+            
+            height: 50px;
+            
+            /*width: 1310px;
+            position: relative;
+            bottom: 31px;
+            left: -1000px; */ 
+            
+        }
+        #news-items {
+            /* display: flex;
+            justify-items: center;
+            align-items: center; */
+            color: #fff;
+        
+            
+           
+        }
+        
+            /* display: flex; */
+            /* align-items: center;
+           
+            font-size: 16px;
+            margin: auto;
+            padding: 15px;
+         */
+         
+        #bar1 {
+            height: 20px;
+
+        }
+        #arrow-white {
+            width: 12px;
+            
+        } 
+        .no-border {
+            border: none !important;
+        }
+
+        #main-content-container-left {
+           position: relative;
+            width: 1000px;
+            height: 600px;
+            /* background-color: green; */
+        }
+       h3 {
+           color: black;
+           font-size: 20px;
+           position: absolute;
+           margin-left: 120px;
+       }
+       hr {
+           color: white;
+           background-color: #a91717;
+           width: 108px;
+           position: absolute;
+           margin-top: 45px;
+           margin-left: 120px;
+           height: 2px;
+           border: none;
+           
+       }
+       
+           
+       #asda  {
+          position: absolute;
+           font-size: 30px;
+           font-weight: bold;
+           margin-left: 120px;
+           margin-top: 55px;
+           text-decoration: none;
+           color: black;
+       }
+
+        #asda:hover {
+            color: #1167a8;
+        }
+      .asda-div h2 {
+          width: 330px;
+          height: 100px;
+           text-align: left;
+           position: absolute;
+           margin-top: 95px;
+           margin-left: 120px;
+           overflow: wrap;
+           color:#5a5a5a;
+       }
+       .asda-i {
+          position: absolute;
+        margin-left: 460px;
+        margin-top: 98px;
+       }
+       .two-hrs {
+           position: absolute;
+           font-size: 12px;
+           margin-left: 140px;
+           margin-top: 160px;
+       }
+       #line2 {
+         position: absolute;
+         margin-left: 204px;
+         margin-top: 157px;
+         height: 19px;
+         
+       }
+       .tech {
+           position: absolute;
+           margin-top: 160px;
+           margin-left: 210px;
+           font-size: 12px;
+           color: #a91717;
+           font-weight: bold;
+       }
+       #clock {
+           position: absolute;
+           width: 13px;
+           margin-top: 160px;
+           margin-left: 120px; 
+       }
+       .hr3 {
+           color: #a91717;
+           margin-top: 190px;
+
+       }
+       .surv {
+         position: absolute;
+         margin-top: 327px;
+         margin-left: 118px;
+         font-size: 16px;
+         font-weight: bold;
+       }
+       .ebay {
+           position:absolute;
+           margin-top: 325px;
+           margin-left: 460px;
+           font-size: 16px;
+           font-weight: bold;
+       }
+
+       #white-bar {
+           
+          
+            height: 300px;
+            margin-top: 400px;
+           margin-left: 900px;
+       } 
+       #main-container3 {
+           position: absolute;
+           margin-top: -660px;
+           margin-left: 870px;
+           height: 600px;
+           width: 400px;
+           /* background-color: yellow; */
+       }
+        h4 {
+           font-size: 30px;
+           margin-top: 5px;
+           margin-left: 10px;
+       }
+
+       #uk-science {
+           margin-left: 10px;
+           margin-top: -40px;
+       }
+       #drone {
+           margin-left: 10px;
+       }
+       #spacex {
+           margin-left: 10px;
+       }
+       #hr4 {
+
+    position: absolute;
+    margin-top: 350px;
+color: grey;
+border: none;
+background-color: grey;
+width: 740px;
+       }
+
+       
+        </style>
+</head>
+<body>
+    <!-- centering any div width:800; margin:0 auto; -->
+    <div id="topbar">
+        <img id="bbclogo" src="images/bbc-blocks-dark.png">
+
+        <div id="signin-div" class="topbar-section">
+
+            <img class="prelogo" src="images/prelogo.png">
+            
+            <span id="signin">Sign In</span>
+
+            <img src="images/brak1.png" id="brak1">
+
+            <img src="images/bell.png" id="bell">
+
+            <img src="images/line.png" id="line">
+
+            <span id="news">News</span>
+
+            <img src="images/line.png" id="line">
+
+            <span id="news">Sport</span>
+
+            <img src="images/line.png" id="line">
+
+            <span id="news">Weather</span>
+
+            <img src="images/line.png" id="line">
+
+            <span id="news">IPlayer</span>
+
+            <img src="images/line.png" id="line">
+
+            <span id="news">TV</span>
+
+            <img src="images/line.png" id="line">
+
+            <span id="news">Radio</span>
+
+            <img src="images/line.png" id="line">
+
+            <span class="more">More</span>
+            <img src="images/more-arrow.png" id="more-arrow">
+
+            <img src="images/line.png" id="line">
+            
+</div>
+
+<div class="searchbar">
+            <input type="text" value=" Search"class="search">
+            <input type="image" src="images/glass.png" class="glass">
+
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="menu-bar-container">
+
+        <div class="menu-bar">
+            <h1 class="news">NEWS</h1>
+            <div id="local-news">
+                <a href="https://www.bbc.com/news">Find Local News</a>
+
+                <!-- <div class="main-news-row">
+                    <ul id="news-items">
+                        <li class="news-nav">Home</li>
+                         <img src="images/bar1.png" id="bar1">
+
+                        <li class="news-nav">UK</li>
+                         <img src="images/bar1.png" id="bar1">
+                        <li class="news-nav">World</li>
+                         <img src="images/bar1.png" id="bar1">
+                        <li class="news-nav">Business</li>
+                         <img src="images/bar1.png" id="bar1">
+                        <li class="news-nav">Politics</li>
+                         <img src="images/bar1.png" id="bar1">
+                        <li class="news-nav">Tech</li>
+                         <img src="images/bar1.png" id="bar1">
+                        <li class="news-nav">Science</li>
+                         <img src="images/bar1.png" id="bar1">
+                        <li class="news-nav">Health</li>
+                         <img src="images/bar1.png" id="bar1">
+                        <li class="news-nav">Education</li>
+                         <img src="images/bar1.png" id="bar1">
+                        <li class="news-nav">Entertainment & Arts</li>
+                         <img src="images/bar1.png" id="bar1">
+                        <li class="news-nav">Web & Audio</li>
+                         <img src="images/bar1.png" id="bar1">
+                        <li class="news-nav">More</li>
+                        <img src="images/arrow-white.png" id="arrow-white">
+                    </ul>
+                </div>--->
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="menu-bar-container2">
+
+            <div id="menu-bar2">
+                <a href="">Home</a>
+                <img src="images/bar1.png" id="bar1">
+                <a href="">UK</a>
+                <img src="images/bar1.png" id="bar1">
+                <a href="">World</a>
+                <img src="images/bar1.png" id="bar1">
+                <a href="">Business</a>
+                <img src="images/bar1.png" id="bar1">
+                <a href="">Politics</a>
+                <img src="images/bar1.png" id="bar1">
+                <a href="">Tech</a>
+                <img src="images/bar1.png" id="bar1">
+                <a href="">Science</a>
+                <img src="images/bar1.png" id="bar1">
+                <a href="">Health</a>
+                <img src="images/bar1.png" id="bar1">
+                <a href="">Education</a>
+                <img src="images/bar1.png" id="bar1">
+                <a href="">Entertainment & Arts</a>
+                <img src="images/bar1.png" id="bar1">
+                <a href="">Video & Audio</a>
+                <img src="images/bar1.png" id="bar1">
+                <a href="" class="no-border">More</a>
+                <img src="images/arrow-white.png" id="arrow-white">
+
+            </div>
+        
+                </div>
+                <div class="clear"></div>
+                <div id="main-content-container-left">
+                    <div class="content-container">
+                        <h3 class="technology">Technology</h3>
+                        <hr class="hr1">
+                        <!-- <span class="asda">Asda bug exposed payment details</span> -->
+                        <a href="https://www.bbc.com/news/technology-35350789" id="asda">Asda bug exposed payment details</a>
+
+                        <div class="asda-div"><h2>Security vulnerability that put customers at risk have affected Asda's website for a couple of years, a security expert has revealed.</h2></div>
+                        <img class="asda-i" src="images/asda.png">
+                        <br>
+                        <img src="images/clock.png" id="clock">
+                        <span class="two-hrs"> 2 hours ago</span>
+                    <img src="images/line.png" id="line2">
+                    <span class="tech">Technology</span>
+
+                    <hr class="hr3">
+                    <span class="surv">Surveillance firm fit in hack attack</span>
+                    <span class="ebay">Ebay flaw has existed for months</span>
+
+                    <hr id="hr4">
+
+                    
+                     <div id="main-container3">
+                         
+                         <img src="images/white-bar.png" id="white-bar">
+ 
+                         <h4 id="watch">Watch/Listen</h4>
+                         <img src="images/uk-science.png" id="uk-science">
+                         <img src="images/drone.png" id="drone">
+                        <img src="images/spacex.png" id="spacex">
+
+                       
+
+
+                     </div>
+                     
+
+                    </div>
+
+
+                </div>
+                <div class="clear"></div>
+
+               
+
+
+
+
+                </div>
+
+
+       
+            
+
+
+            
+
+        
+            
+
+        
+
+
+       
+    
+</body>
+</html>
